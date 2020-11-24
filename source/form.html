@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Вязание на заказ Mishka</title>
+  </head>
+
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img
+          src="img/logotype-mobile.svg"
+          width="86"
+          height="35"
+          alt="Магазин вязаных изделий Mishka"
+        />
+      </a>
+      <div class="main-nav__wrapper">
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__catalog" href="catalog.html">
+                Каталог товаров
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__catalog" href="form.html">
+                Вязание на заказ
+              </a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__search" target="_blank" href="#">
+                Поиск по сайту
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__cart" target="_blank" href="#">
+                Корзина: пока пуста
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main">
+      <section>
+      <h1>Вязание на заказ</h1>
+      <p>
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
+        заказа и мы свяжемся с вами, чтобы уточнить детали.
+      </p>
+      <form
+        class="selection-parameters-form form-group"
+        action="https://echo.htmlacademy.ru"
+        method="get"
+      >
+        <div class="form-group__wrapper">
+          <fieldset>
+            <span>Тип</span>
+            <ul>
+              <li>
+                <input
+                  type="radio"
+                  id="accessory"
+                  name="choice-object"
+                  value="Аксессуар для интерьера"
+                  checked
+                />
+                <label for="accessory">Аксессуар для интерьера</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  id="toy"
+                  name="choice-object"
+                  value="Детская игрушка"
+                />
+                <label for="toy">Детская игрушка</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <span>Цвет</span>
+            <ul>
+              <li>
+                <input
+                  type="radio"
+                  id="colors-white"
+                  name="colors"
+                  value="Белый"
+                  checked
+                />
+                <label for="colors-white">Белый</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  id="colors-gray"
+                  name="colors"
+                  value="Серый"
+                />
+                <label for="colors-gray">Серый</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  id="colors-tiffany"
+                  name="colors"
+                  value="«Тиффани»"
+                />
+                <label for="colors-tiffany">«Тиффани»</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  id="colors-black"
+                  name="colors"
+                  value="Черный"
+                />
+                <label for="colors-black">Черный</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  id="colors-pink"
+                  name="colors"
+                  value="Розовый"
+                />
+                <label for="colors-pink">Розовый</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  id="colors-orange"
+                  name="colors"
+                  value="Оранжевый"
+                />
+                <label for="colors-orange">Оранжевый</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <label for="first-name"
+              >Имя:
+              <input
+                placeholder="Введите ваше имя*"
+                id="first-name"
+                type="text"
+                name="name"
+                required
+                pattern="^[A-Za-zА-Яа-яЁё]+$"/>
+              </label>
+            <label for="second-name"
+              >Фамилия:
+              <input
+                placeholder="Укажите фамилию*"
+                id="second-name"
+                type="text"
+                name="name"
+                required
+                pattern="^[A-Za-zА-Яа-яЁё]+$"/>
+              </label>
+
+            <label for="third-name"
+              >Отчество:
+              <input
+                placeholder="Отчество, если желаете"
+                id="third-name"
+                type="text"
+                name="name"
+                required
+                pattern="^[A-Za-zА-Яа-яЁё]+$"/>
+              </label>
+          </fieldset>          
+        <fieldset>
+            <label  for="telephone">Тел
+              <input type="tel" name="telephone" id="telephone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required></label>
+            <label  for="email">E-mail
+              <input type="email" name="email" id="email" placeholder="Ваш Email*" required></label>
+              <label for="additional-info">Доп
+              <textarea id="additional-info" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea></label>
+        </fieldset>
+        <p>*Поля обязательны для заполнения</p>        
+        <button type="submit">отправить заявку</button>
+        </div>
+      </form>
+      </section>
+    </main>
+    <footer>
+      <div class="social-wrapper">
+        <ul class="social-list">
+          <li class="social-item">Instagram</li>
+          <li class="social-item">facebook</li>
+          <li class="social-item">Twitter</li>
+        </ul>
+        <div>
+          <span>Разработано</span>
+          <img src="https://via.placeholder.com/27x34" alt="логотип HTML Academy"/>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
